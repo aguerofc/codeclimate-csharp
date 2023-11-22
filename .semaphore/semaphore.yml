@@ -19,8 +19,8 @@ blocks:
       jobs:
         - name: Install .Net Core
           commands:
-            - export DOTNET_ROOT=usr/bin/dotnet
-            - 'export PATH=$PATH:usr/bin/dotnet'
+            - export DOTNET_ROOT=usr/share/dotnet
+            - 'export PATH=$PATH:DOTNET_ROOT'
             - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
             - sudo dpkg -i packages-microsoft-prod.deb
             - sudo apt-get update
@@ -30,7 +30,6 @@ blocks:
             - which dotnet
             - dotnet --info
             - dotnet --version
-            - ln -sf /usr/share/dotnet/dotnet /usr/bin/dotnet
   - name: Build and Test
     task:
       jobs:
