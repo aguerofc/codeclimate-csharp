@@ -30,7 +30,7 @@ blocks:
             - which dotnet
             - dotnet --info
             - dotnet --version
-            - cat ~/.bashrc
+            - ln -sf /usr/share/dotnet/dotnet /usr/bin/dotnet
   - name: Build and Test
     task:
       jobs:
