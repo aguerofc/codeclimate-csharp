@@ -29,6 +29,7 @@ blocks:
             - sudo apt-get install -y dotnet-sdk-3.1
             - which dotnet
             - dotnet --info
+            - 'echo "PATH: $PATH"'
   - name: Build and Test
     task:
       jobs:
