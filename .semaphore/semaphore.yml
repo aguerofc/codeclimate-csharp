@@ -13,7 +13,7 @@ blocks:
             - checkout
         - name: Install .NET Core
           commands:
-            - '- wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
+            - '- curl -o packages-microsoft-prod.deb https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb'
             - '- sudo dpkg -i packages-microsoft-prod.deb'
             - '- sudo apt-get update'
             - '- sudo apt-get install -y apt-transport-https'
@@ -31,6 +31,11 @@ blocks:
             - '- ./cc-test-reporter before-build'
             - '- dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover'
             - '- ./cc-test-reporter after-build --exit-code $?'
+        - name: Debugging
+          commands:
+            - '- ls -al  # List files in the current directory for debugging'
+            - '- cat /etc/resolv.conf  # Display DNS configuration'
+            - '- ping google.com  # Check internet connectivity'
       env_vars:
         - name: CC_TEST_REPORTER_ID
           value: 4cccf0b54b8cb9f9cc6295b9be54db75c73774b1848978f9828bc45bafdb3e39
