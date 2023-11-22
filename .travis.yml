@@ -1,6 +1,6 @@
 env:
   global:
-    - CC_TEST_REPORTER_ID=4b9628bb734333de65b29ec1cda3373a9df038f75a323e5cb5fed1afc74de7cc
+    - CC_TEST_REPORTER_ID=db2bf24e3419dd2d1453db352f07e5ec1478af21d774d7220033d4869a80a907
 language: csharp
 solution: AuditJournalAPI.sln  # Adjust the solution file name
 
