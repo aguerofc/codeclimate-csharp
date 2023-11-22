@@ -11,7 +11,13 @@ blocks:
         - name: Setup
           commands:
             - checkout
-        - name: Install .NET Core
+      env_vars:
+        - name: CC_TEST_REPORTER_ID
+          value: 4cccf0b54b8cb9f9cc6295b9be54db75c73774b1848978f9828bc45bafdb3e39
+  - name: Install .Net Core
+    task:
+      jobs:
+        - name: Install .Net Core
           commands:
             - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
             - sudo dpkg -i packages-microsoft-prod.deb
@@ -19,11 +25,17 @@ blocks:
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-3.1
+  - name: Build and Test
+    task:
+      jobs:
         - name: Build and Test
           commands:
             - dotnet restore
             - dotnet build --configuration Release
             - dotnet test
+  - name: Code Climate Analysis
+    task:
+      jobs:
         - name: Code Climate Analysis
           commands:
             - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
@@ -31,9 +43,12 @@ blocks:
             - ./cc-test-reporter before-build
             - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover'
             - ./cc-test-reporter after-build --exit-code $?
-      env_vars:
-        - name: CC_TEST_REPORTER_ID
-          value: 4cccf0b54b8cb9f9cc6295b9be54db75c73774b1848978f9828bc45bafdb3e39
+  - name: Cleanup
+    task:
+      jobs:
+        - name: Cleanup
+          commands:
+            - rm -f packages-microsoft-prod.deb
 after_pipeline:
   task:
     jobs:
