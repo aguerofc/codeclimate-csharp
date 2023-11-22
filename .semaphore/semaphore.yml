@@ -34,9 +34,9 @@ blocks:
       jobs:
         - name: Build and Test
           commands:
-            - /usr/share/dotnet/sdk/dotnet restore
-            - /usr/share/dotnet/sdk/dotnet build
-            - /usr/share/dotnet/sdk/dotnet test
+            - dotnet restore
+            - dotnet build
+            - dotnet test
   - name: Code Climate Analysis
     task:
       jobs:
