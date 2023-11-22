@@ -13,7 +13,7 @@ blocks:
             - checkout
         - name: Install .NET Core
           commands:
-            - 'sudo wget --quiet https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'''
+            - 'sudo wget --quiet https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
             - sudo dpkg -i packages-microsoft-prod.deb
             - sudo apt-get update
             - sudo apt-get install -y apt-transport-https
@@ -26,10 +26,10 @@ blocks:
             - dotnet test
         - name: Code Climate Analysis
           commands:
-            - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'''
+            - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
             - chmod +x ./cc-test-reporter
             - ./cc-test-reporter before-build
-            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover'''
+            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover'
             - ./cc-test-reporter after-build --exit-code $?
         - name: Debugging
           commands:
