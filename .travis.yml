@@ -1,0 +1,10 @@
+language: csharp
+solution: \AuditJournalAPI.sln  # Adjust the solution file name
+
+mono: none
+dotnet: 3.1  # Adjust the .NET Core version as needed
+
+script:
+  - dotnet restore
+  - dotnet build --configuration Release
+  - dotnet test
