@@ -26,7 +26,7 @@ blocks:
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-3.1
-            - wich dotnet
+            - which dotnet
             - dotnet --info
             - dotnet restore
             - dotnet build
