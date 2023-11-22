@@ -36,9 +36,9 @@ blocks:
       jobs:
         - name: Build and Test
           commands:
-            - $HOME/.dotnet/dotnet restore
-            - $HOME/.dotnet/dotnet build
-            - $HOME/.dotnet/dotnet test
+            - /usr/bin/dotnet/dotnet restore
+            - /usr/bin/dotnet/dotnet build
+            - /usr/bin/dotnet/dotnet test
   - name: Code Climate Analysis
     task:
       jobs:
