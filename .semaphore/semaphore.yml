@@ -39,4 +39,4 @@ after_pipeline:
     jobs:
       - name: Cleanup
         commands:
-          - rm -f packages-microsoft-prod.deb'
+          - rm -f packages-microsoft-prod.deb
