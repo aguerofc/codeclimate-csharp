@@ -35,7 +35,7 @@ blocks:
       jobs:
         - name: Build and Test
           commands:
-            - $DOTNET_ROOT/dotnet restore
+            - $DOTNET_ROOT/ dotnet restore
             - dotnet build
             - dotnet test
   - name: Code Climate Analysis
