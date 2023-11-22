@@ -19,7 +19,8 @@ blocks:
       jobs:
         - name: Install .Net Core
           commands:
-            - 'export PATH=$PATH:/usr/bin:/usr/local/bin:/bin:/usr/game'
+            - export DOTNET_ROOT=usr/share/dotnet
+            - 'export PATH=$PATH:usr/share/dotnet'
             - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
             - sudo dpkg -i packages-microsoft-prod.deb
             - sudo apt-get update
