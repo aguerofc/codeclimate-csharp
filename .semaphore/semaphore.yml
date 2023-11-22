@@ -19,13 +19,14 @@ blocks:
       jobs:
         - name: Install .Net Core
           commands:
-            - 'export PATH=/usr/bin:/usr/local/bin:/bin:/usr/game'
+            - 'export PATH=$PATH:/usr/bin:/usr/local/bin:/bin:/usr/game'
             - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
             - sudo dpkg -i packages-microsoft-prod.deb
             - sudo apt-get update
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-3.1
+            - dpkg --search /usr/local/bin/dotnet
             - whereis dotnet
             - dotnet --info
             - 'echo "PATH: $PATH"'
