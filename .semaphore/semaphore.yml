@@ -27,7 +27,7 @@ blocks:
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-3.1
-            - which dotnet
+            - whereis dotnet
             - dotnet --info
             - 'echo "PATH: $PATH"'
   - name: Build and Test
