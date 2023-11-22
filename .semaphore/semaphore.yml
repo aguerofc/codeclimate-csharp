@@ -43,12 +43,6 @@ blocks:
             - ./cc-test-reporter before-build
             - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=opencover'
             - ./cc-test-reporter after-build --exit-code $?
-  - name: Cleanup
-    task:
-      jobs:
-        - name: Cleanup
-          commands:
-            - rm -f packages-microsoft-prod.deb
 after_pipeline:
   task:
     jobs:
