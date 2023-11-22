@@ -29,6 +29,7 @@ blocks:
             - which dotnet
             - dotnet --info
             - dotnet --version
+            - cat ~/.bashrc
   - name: Build and Test
     task:
       jobs:
