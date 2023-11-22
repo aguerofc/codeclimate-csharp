@@ -28,14 +28,16 @@ blocks:
             - 'echo "PATH: $PATH"'
             - which dotnet
             - dotnet --info
+            - export DOTNET_ROOT=$HOME/.dotnet
+            - 'export PATH=$PATH:$HOME/.dotnet'
   - name: Build and Test
     task:
       jobs:
         - name: Build and Test
           commands:
-            - dotnet restore
-            - dotnet build --configuration Release
-            - dotnet test
+            - $HOME/.dotnet/dotnet restore
+            - $HOME/.dotnet/dotnet build
+            - $HOME/.dotnet/dotnet test
   - name: Code Climate Analysis
     task:
       jobs:
