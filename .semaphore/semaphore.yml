@@ -19,8 +19,8 @@ blocks:
       jobs:
         - name: Install .Net Core
           commands:
-            - export DOTNET_ROOT=usr/share/dotnet
-            - 'export PATH=$PATH:usr/share/dotnet'
+            - export DOTNET_ROOT=usr/bin/dotnet
+            - 'export PATH=$PATH:usr/bin/dotnet'
             - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
             - sudo dpkg -i packages-microsoft-prod.deb
             - sudo apt-get update
@@ -36,7 +36,7 @@ blocks:
       jobs:
         - name: Build and Test
           commands:
-            - dotnet restore
+            - usr/bin/dotnet/dotnet restore
             - dotnet build
             - dotnet test
   - name: Code Climate Analysis
