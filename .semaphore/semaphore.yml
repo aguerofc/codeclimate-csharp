@@ -36,6 +36,7 @@ blocks:
             - 'echo "PATH: $PATH"'
             - cat ~/.bashrc
             - ls -al /usr/bin/dotnet
+            - /usr/share/dotnet/dotnet restore /home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln
   - name: Build and Test
     task:
       jobs:
