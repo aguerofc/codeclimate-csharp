@@ -1,0 +1,55 @@
+version: v1.0
+name: Initial Pipeline
+agent:
+  machine:
+    type: e1-standard-2
+    os_image: ubuntu2004
+blocks:
+  - name: Get .Net Core
+    task:
+      jobs:
+        - name: Setup
+          commands:
+            - export DOTNET_ROOT=usr/share/dotnet
+            - 'export PATH=$PATH:$DOTNET_ROOT'
+            - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
+            - sudo dpkg -i packages-microsoft-prod.deb
+            - sudo apt-get update
+            - sudo apt-get install -y apt-transport-https
+            - sudo apt-get update
+            - sudo apt-get install -y dotnet-sdk-6.0
+            - source $HOME/.bashrc
+            - which dotnet
+            - dotnet --info
+            - dotnet --version
+            - 'echo "PATH: $PATH"'
+            - cat ~/.bashrc
+            - ls -al /usr/bin/dotnet
+            - pwd
+            - ls
+            - checkout
+            - pwd
+            - ls
+            - cd Backend
+            - /usr/share/dotnet/dotnet restore
+            - /usr/share/dotnet/dotnet build
+            - /usr/share/dotnet/dotnet test
+            - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
+            - chmod +x ./cc-test-reporter
+            - '#./cc-test-reporter before-build'
+            - mkdir -p ./coverage
+            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
+            - ls -R
+            - '#./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p ./AuditJournal.Test/'
+            - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
+            - '#./cc-test-reporter upload-coverage -i codeclimate.xml'
+            - '#./cc-test-reporter after-build --exit-code $?'
+      env_vars:
+        - name: CC_TEST_REPORTER_ID
+          value: 4cccf0b54b8cb9f9cc6295b9be54db75c73774b1848978f9828bc45bafdb3e39
+after_pipeline:
+  task:
+    jobs:
+      - name: Cleanup
+        commands:
+          - rm -f packages-microsoft-prod.deb
