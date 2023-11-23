@@ -41,9 +41,6 @@ blocks:
       env_vars:
         - name: CC_TEST_REPORTER_ID
           value: 4cccf0b54b8cb9f9cc6295b9be54db75c73774b1848978f9828bc45bafdb3e39
-  - name: Get Repository
-    task:
-      jobs: []
   - name: Build and Test
     task:
       jobs:
