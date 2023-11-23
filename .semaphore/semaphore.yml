@@ -37,7 +37,7 @@ blocks:
             - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
             - chmod +x ./cc-test-reporter
             - ./cc-test-reporter before-build
-            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=coverage/'
+            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage/'
             - ls -R
             - '#./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p /path/to/your/project'
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
