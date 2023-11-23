@@ -44,7 +44,7 @@ blocks:
             - pwd
             - ls
             - ls -al /home/semaphore/codeclimate-csharp/Backend
-            - dotnet restore
+            - usr/share/dotnet/dotnet restore
   - name: Build and Test
     task:
       jobs:
