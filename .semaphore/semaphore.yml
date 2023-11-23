@@ -10,10 +10,7 @@ blocks:
       jobs:
         - name: Setup
           commands:
-            - '#checkout'
-            - '#pwd'
-            - '#ls'
-            - '#ls -al /home/semaphore/codeclimate-csharp/Backend'
+            - '#Get.NET Core'
             - export DOTNET_ROOT=usr/share/dotnet
             - 'export PATH=$PATH:$DOTNET_ROOT'
             - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
@@ -31,6 +28,7 @@ blocks:
             - ls -al /usr/bin/dotnet
             - pwd
             - ls
+            - '# Execute checkout'
             - checkout
             - pwd
             - ls
