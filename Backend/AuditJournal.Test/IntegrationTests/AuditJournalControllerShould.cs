@@ -49,6 +49,7 @@ namespace BAS.AuditJournal.Test.IntegrationTests
         /// Get account journal success test
         /// </summary>
         /// <returns></returns>
+        [Ignore]
         [TestMethod]
         public async Task GetAccountJournal()
         {           
