@@ -39,7 +39,7 @@ blocks:
             - ls -al /usr/bin/dotnet
             - pwd
             - ls
-            - '#/usr/share/dotnet/dotnet restore /Backend/AuditJournalAPI.sln'
+            - /usr/share/dotnet/dotnet restore '/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'
   - name: Build and Test
     task:
       jobs:
