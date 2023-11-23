@@ -41,10 +41,10 @@ blocks:
             - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
             - chmod +x ./cc-test-reporter
             - ./cc-test-reporter before-build
-            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=dotcover'
+            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./coverage/lcov.info'
             - ls -R
-            - ./cc-test-reporter format-coverage -t dotcover -o codeclimate.dotcover
-            - ./cc-test-reporter upload-coverage -i codeclimate.dotcover
+            - './cc-test-reporter format-coverage -t, --coverage-input-type lcov -o codeclimate.lcov'
+            - ./cc-test-reporter upload-coverage -i codeclimate.lcov
             - '#./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?'
       env_vars:
         - name: CC_TEST_REPORTER_ID
