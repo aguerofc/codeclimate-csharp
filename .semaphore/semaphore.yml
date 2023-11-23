@@ -27,6 +27,7 @@ blocks:
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-6.0
+            - source $HOME/.bashrc
             - which dotnet
             - dotnet --info
             - dotnet --version
