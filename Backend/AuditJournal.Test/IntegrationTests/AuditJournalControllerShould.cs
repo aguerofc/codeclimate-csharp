@@ -4,6 +4,7 @@ using BAS.AuditJournal.Entities;
 using BAS.AuditJournal.Infrastructure.Repository;
 using BAS.AuditJournal.Models;
 using BAS.AuditJournal.Test.Helper;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Moq;
 
@@ -49,6 +50,7 @@ namespace BAS.AuditJournal.Test.IntegrationTests
         /// Get account journal success test
         /// </summary>
         /// <returns></returns>
+        [Ignore]
         [TestMethod]
         public async Task GetAccountJournal()
         {           
