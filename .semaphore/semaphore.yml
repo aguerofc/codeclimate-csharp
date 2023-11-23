@@ -32,6 +32,7 @@ blocks:
             - dotnet --version
             - 'echo "PATH: $PATH"'
             - cat ~/.bashrc
+            - dotnet --help
   - name: Build and Test
     task:
       jobs:
