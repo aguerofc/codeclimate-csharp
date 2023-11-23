@@ -36,13 +36,12 @@ blocks:
             - 'echo "PATH: $PATH"'
             - cat ~/.bashrc
             - ls -al /usr/bin/dotnet
-            - /usr/share/dotnet/dotnet restore
   - name: Build and Test
     task:
       jobs:
         - name: Build and Test
           commands:
-            - /usr/share/dotnet/dotnet restore
+            - /usr/share/dotnet/dotnet restore /home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln
             - /usr/share/dotnet/dotnet build
             - dotnet test
   - name: Code Climate Analysis
