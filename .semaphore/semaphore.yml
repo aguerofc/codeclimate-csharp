@@ -45,7 +45,7 @@ blocks:
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.lcov'
             - '#./cc-test-reporter upload-coverage -i codeclimate.lcov'
             - ls -R
-            - ./cc-test-reporter after-build --exit-code $?
+            - ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?
       env_vars:
         - name: CC_TEST_REPORTER_ID
           value: 4cccf0b54b8cb9f9cc6295b9be54db75c73774b1848978f9828bc45bafdb3e39
