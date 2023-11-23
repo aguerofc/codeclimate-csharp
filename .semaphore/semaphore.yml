@@ -51,7 +51,8 @@ blocks:
           commands:
             - pwd
             - ls
-            - cd /home/semaphore/codeclimate-csharp/Backend
+            - printenv
+            - ls /home/semaphore/codeclimate-csharp/Backend
             - '#dotnet restore AuditJournalAPI.sln'
             - '#/usr/share/dotnet/dotnet restore ''/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'''
             - '#/usr/share/dotnet/dotnet build'
