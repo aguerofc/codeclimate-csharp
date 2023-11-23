@@ -33,6 +33,7 @@ blocks:
             - 'echo "PATH: $PATH"'
             - cat ~/.bashrc
             - ls -al /usr/bin/dotnet
+            - /usr/share/dotnet/dotnet new console -o MyApp -f net6.0
   - name: Build and Test
     task:
       jobs:
