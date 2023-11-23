@@ -41,7 +41,7 @@ blocks:
             - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
             - ls -R
             - ls ./AuditJournal.Test/
-            - ./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p /home/semaphore/codeclimate-csharp/Backend/AuditJournal.Test/Cobertura.xml
+            - ./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p ./AuditJournal.Test/coverage/cobertura.xml
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
             - ./cc-test-reporter upload-coverage -i codeclimate.xml
             - '#./cc-test-reporter after-build --exit-code $?'
