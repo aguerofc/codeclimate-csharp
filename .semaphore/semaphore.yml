@@ -47,7 +47,7 @@ blocks:
           commands:
             - pwd
             - ls
-            - /usr/share/dotnet/dotnet restore /home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln
+            - /usr/share/dotnet/dotnet restore '/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'
             - /usr/share/dotnet/dotnet build
             - dotnet test
   - name: Code Climate Analysis
