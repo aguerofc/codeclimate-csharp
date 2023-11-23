@@ -52,7 +52,7 @@ blocks:
             - pwd
             - ls
             - printenv
-            - cd codeclimate-csharp/Backend
+            - cd codeclimate-csharp
             - '#dotnet restore AuditJournalAPI.sln'
             - '#/usr/share/dotnet/dotnet restore ''/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'''
             - '#/usr/share/dotnet/dotnet build'
