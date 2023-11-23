@@ -42,6 +42,8 @@ blocks:
             - chmod +x ./cc-test-reporter
             - ./cc-test-reporter before-build
             - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov'
+            - pwd
+            - ls
             - ls -R
             - ./cc-test-reporter format-coverage -t lcov -o codeclimate.lcov
             - ./cc-test-reporter upload-coverage -i codeclimate.lcov
