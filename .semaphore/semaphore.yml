@@ -36,28 +36,23 @@ blocks:
             - ls
             - cd Backend
             - /usr/share/dotnet/dotnet restore
+            - /usr/share/dotnet/dotnet build
+            - '#dotnet test'
       env_vars:
         - name: CC_TEST_REPORTER_ID
           value: 4cccf0b54b8cb9f9cc6295b9be54db75c73774b1848978f9828bc45bafdb3e39
   - name: Get Repository
     task:
-      jobs:
-        - name: Checkout
-          commands:
-            - checkout
-            - pwd
-            - ls
-            - ls -al /home/semaphore/codeclimate-csharp/Backend
-            - usr/share/dotnet/dotnet restore
+      jobs: []
   - name: Build and Test
     task:
       jobs:
         - name: Build and Test
           commands:
-            - pwd
-            - ls
-            - printenv
-            - cd codeclimate-csharp
+            - '#pwd'
+            - '#ls'
+            - '#printenv'
+            - '#cd codeclimate-csharp'
             - '#dotnet restore AuditJournalAPI.sln'
             - '#/usr/share/dotnet/dotnet restore ''/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'''
             - '#/usr/share/dotnet/dotnet build'
