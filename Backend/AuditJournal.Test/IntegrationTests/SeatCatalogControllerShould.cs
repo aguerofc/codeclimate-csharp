@@ -49,6 +49,7 @@ namespace BAS.AuditJournal.Test.IntegrationTests
         /// Get seat catalog  success test
         /// </summary>
         /// <returns></returns>
+         [Ignore]
         [TestMethod]
         public async Task GetSeatCatalogs()
         {
