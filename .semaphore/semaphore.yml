@@ -42,7 +42,7 @@ blocks:
             - chmod +x ./cc-test-reporter
             - ./cc-test-reporter before-build
             - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov'
-            - cd /home/semaphore
+            - cd /home
             - pwd
             - ls
             - ls -R
