@@ -39,7 +39,7 @@ blocks:
             - ls -al /usr/bin/dotnet
             - pwd
             - ls
-            - /usr/share/dotnet/dotnet restore '/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'
+            - '#/usr/share/dotnet/dotnet restore ''/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'''
   - name: Build and Test
     task:
       jobs:
@@ -47,8 +47,10 @@ blocks:
           commands:
             - pwd
             - ls
-            - /usr/share/dotnet/dotnet restore '/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'
-            - /usr/share/dotnet/dotnet build
+            - cd /home/semaphore/codeclimate-csharp/Backend
+            - dotnet restore AuditJournalAPI.sln
+            - '#/usr/share/dotnet/dotnet restore ''/home/semaphore/codeclimate-csharp/Backend/AuditJournalAPI.sln'''
+            - '#/usr/share/dotnet/dotnet build'
             - dotnet test
   - name: Code Climate Analysis
     task:
