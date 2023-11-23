@@ -38,6 +38,8 @@ blocks:
             - chmod +x ./cc-test-reporter
             - ./cc-test-reporter before-build
             - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=/home/semaphore/codeclimate-csharp/coverage/lcov.info'
+            - cd /home/semaphore/codeclimate-csharp
+            - ls
             - ls -R
             - ./cc-test-reporter format-coverage -t lcov -o codeclimate.lcov -p coverage
             - ./cc-test-reporter upload-coverage -i codeclimate.lcov
