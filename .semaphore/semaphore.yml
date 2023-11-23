@@ -40,7 +40,7 @@ blocks:
         - name: Build and Test
           commands:
             - /usr/share/dotnet/dotnet restore
-            - dotnet build
+            - /usr/share/dotnet/dotnet build
             - dotnet test
   - name: Code Climate Analysis
     task:
