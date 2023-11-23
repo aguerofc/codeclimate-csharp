@@ -30,12 +30,13 @@ blocks:
             - which dotnet
             - dotnet --info
             - dotnet --version
+            - 'echo "PATH: $PATH"'
   - name: Build and Test
     task:
       jobs:
         - name: Build and Test
           commands:
-            - $DOTNET_ROOT/ dotnet restore
+            - $DOTNET_ROOT/dotnet restore
             - dotnet build
             - dotnet test
   - name: Code Climate Analysis
