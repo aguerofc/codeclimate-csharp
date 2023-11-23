@@ -1,0 +1,845 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE coverage SYSTEM "http://cobertura.sourceforge.net/xml/coverage-04.dtd">
+<coverage line-rate="0.489082969432314" branch-rate="0" lines-covered="112" lines-valid="229" branches-covered="0" branches-valid="20" complexity="80" version="0" timestamp="1700742353">
+  <sources />
+  <packages>
+    <package name="AuditJournal.API" line-rate="0.619047619047619" branch-rate="0" complexity="18">
+      <classes>
+        <class name="BAS.AuditJournal.API.Controllers.AuditJournalController" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.API\Controllers\AuditJournalController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+                <line number="58" hits="1" branch="false" />
+                <line number="59" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+                <line number="61" hits="1" branch="false" />
+                <line number="62" hits="1" branch="false" />
+                <line number="63" hits="1" branch="false" />
+                <line number="64" hits="1" branch="false" />
+                <line number="65" hits="1" branch="false" />
+                <line number="66" hits="1" branch="false" />
+                <line number="68" hits="1" branch="false" />
+                <line number="69" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="58" hits="1" branch="false" />
+            <line number="59" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+            <line number="61" hits="1" branch="false" />
+            <line number="62" hits="1" branch="false" />
+            <line number="63" hits="1" branch="false" />
+            <line number="64" hits="1" branch="false" />
+            <line number="65" hits="1" branch="false" />
+            <line number="66" hits="1" branch="false" />
+            <line number="68" hits="1" branch="false" />
+            <line number="69" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.API.Controllers.AuthController" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.API\Controllers\AuthController.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="NotAuthorized" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="12" hits="0" branch="false" />
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="12" hits="0" branch="false" />
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.API.Controllers.SeatCatalogController" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.API\Controllers\SeatCatalogController.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="37" hits="1" branch="false" />
+                <line number="38" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="44" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
+                <line number="46" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="55" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+                <line number="57" hits="1" branch="false" />
+                <line number="59" hits="1" branch="false" />
+                <line number="60" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="37" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="44" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="46" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="55" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="57" hits="1" branch="false" />
+            <line number="59" hits="1" branch="false" />
+            <line number="60" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.Filter.AuthorizationFilterAttribute" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.API\Filter\AuthorizationFilterAttribute.cs" line-rate="0" branch-rate="0" complexity="7">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="17" hits="0" branch="false" />
+                <line number="18" hits="0" branch="false" />
+                <line number="19" hits="0" branch="false" />
+                <line number="20" hits="0" branch="false" />
+                <line number="21" hits="0" branch="false" />
+                <line number="22" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="OnAuthorization" signature="(...)" line-rate="0" branch-rate="0" complexity="6">
+              <lines>
+                <line number="29" hits="0" branch="false" />
+                <line number="30" hits="0" branch="false" />
+                <line number="31" hits="0" branch="false" />
+                <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="34" hits="0" branch="false" />
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+                <line number="37" hits="0" branch="false" />
+                <line number="38" hits="0" branch="false" />
+                <line number="40" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="41" hits="0" branch="false" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+                <line number="45" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="46" hits="0" branch="false" />
+                <line number="47" hits="0" branch="false" />
+                <line number="48" hits="0" branch="false" />
+                <line number="49" hits="0" branch="false" />
+                <line number="51" hits="0" branch="false" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+                <line number="54" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="17" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="19" hits="0" branch="false" />
+            <line number="20" hits="0" branch="false" />
+            <line number="21" hits="0" branch="false" />
+            <line number="22" hits="0" branch="false" />
+            <line number="29" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="31" hits="0" branch="false" />
+            <line number="33" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="34" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="37" hits="0" branch="false" />
+            <line number="38" hits="0" branch="false" />
+            <line number="40" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="41" hits="0" branch="false" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="45" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="46" hits="0" branch="false" />
+            <line number="47" hits="0" branch="false" />
+            <line number="48" hits="0" branch="false" />
+            <line number="49" hits="0" branch="false" />
+            <line number="51" hits="0" branch="false" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="54" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.Models.ApiResponse&lt;T&gt;" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.API\Models\ApiResponse.cs" line-rate="0.666666666666667" branch-rate="1" complexity="6">
+          <methods>
+            <method name="get_Success" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Success" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Message" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Message" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="10" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Result" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Result" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="0" branch="false" />
+            <line number="11" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="AuditJournal.Entities" line-rate="0" branch-rate="1" complexity="18">
+      <classes>
+        <class name="BAS.AuditJournal.Entities.AccountJournal" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Entities\AccountJournal.cs" line-rate="0" branch-rate="1" complexity="14">
+          <methods>
+            <method name="get_AccountId" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_AccountId" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AccountName" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_AccountName" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_AccountType" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_AccountType" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Amount" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Amount" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="30" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_DocumentReference" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_DocumentReference" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_SeatName" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_SeatName" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Nit" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Nit" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="45" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="false" />
+            <line number="18" hits="0" branch="false" />
+            <line number="25" hits="0" branch="false" />
+            <line number="30" hits="0" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="45" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.Entities.SeatCatalog" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Entities\SeatCatalog.cs" line-rate="0" branch-rate="1" complexity="4">
+          <methods>
+            <method name="get_Id" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Id" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="get_Reference" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="set_Reference" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="16" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="AuditJournal.Infrastructure" line-rate="0.701298701298701" branch-rate="1" complexity="21">
+      <classes>
+        <class name="BAS.AuditJournal.Infrastructure.Repository.AccountJournalRepository" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Infrastructure\Repository\AccountJournalRepository.cs" line-rate="0.6" branch-rate="1" complexity="7">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="21" hits="1" branch="false" />
+                <line number="22" hits="1" branch="false" />
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="58" hits="0" branch="false" />
+                <line number="59" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="63" hits="0" branch="false" />
+                <line number="64" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="68" hits="0" branch="false" />
+                <line number="69" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="73" hits="0" branch="false" />
+                <line number="74" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="78" hits="0" branch="false" />
+                <line number="79" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="38" hits="1" branch="false" />
+                <line number="40" hits="1" branch="false" />
+                <line number="41" hits="1" branch="false" />
+                <line number="42" hits="1" branch="false" />
+                <line number="43" hits="1" branch="false" />
+                <line number="45" hits="1" branch="false" />
+                <line number="46" hits="1" branch="false" />
+                <line number="47" hits="1" branch="false" />
+                <line number="48" hits="1" branch="false" />
+                <line number="49" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="21" hits="1" branch="false" />
+            <line number="22" hits="1" branch="false" />
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="38" hits="1" branch="false" />
+            <line number="40" hits="1" branch="false" />
+            <line number="41" hits="1" branch="false" />
+            <line number="42" hits="1" branch="false" />
+            <line number="43" hits="1" branch="false" />
+            <line number="45" hits="1" branch="false" />
+            <line number="46" hits="1" branch="false" />
+            <line number="47" hits="1" branch="false" />
+            <line number="48" hits="1" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="58" hits="0" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
+            <line number="68" hits="0" branch="false" />
+            <line number="69" hits="0" branch="false" />
+            <line number="73" hits="0" branch="false" />
+            <line number="74" hits="0" branch="false" />
+            <line number="78" hits="0" branch="false" />
+            <line number="79" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.Infrastructure.Repository.SeatCatalogRespository" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Infrastructure\Repository\SeatCatalogRespository.cs" line-rate="0.578947368421053" branch-rate="1" complexity="6">
+          <methods>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="23" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="35" hits="0" branch="false" />
+                <line number="36" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="49" hits="1" branch="false" />
+                <line number="50" hits="1" branch="false" />
+                <line number="51" hits="1" branch="false" />
+                <line number="52" hits="1" branch="false" />
+                <line number="53" hits="1" branch="false" />
+                <line number="54" hits="1" branch="false" />
+                <line number="56" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="59" hits="0" branch="false" />
+                <line number="60" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="MoveNext" signature="()" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="64" hits="0" branch="false" />
+                <line number="65" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="23" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="35" hits="0" branch="false" />
+            <line number="36" hits="0" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="false" />
+            <line number="49" hits="1" branch="false" />
+            <line number="50" hits="1" branch="false" />
+            <line number="51" hits="1" branch="false" />
+            <line number="52" hits="1" branch="false" />
+            <line number="53" hits="1" branch="false" />
+            <line number="54" hits="1" branch="false" />
+            <line number="56" hits="1" branch="false" />
+            <line number="59" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="64" hits="0" branch="false" />
+            <line number="65" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.Infrastructure.Repository.UnitOfWork" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Infrastructure\Repository\UnitOfWork.cs" line-rate="1" branch-rate="1" complexity="5">
+          <methods>
+            <method name="get_AuditJournals" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="set_AuditJournals" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="get_SeatCatalogs" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="set_SeatCatalogs" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="18" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".ctor" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="27" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="29" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="27" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="29" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.Infrastructure.ServiceCollectionExtension" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Infrastructure\ServiceCollectionExtension.cs" line-rate="0" branch-rate="1" complexity="1">
+          <methods>
+            <method name="RegisterServices" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="0" branch="false" />
+                <line number="14" hits="0" branch="false" />
+                <line number="15" hits="0" branch="false" />
+                <line number="16" hits="0" branch="false" />
+                <line number="17" hits="0" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="13" hits="0" branch="false" />
+            <line number="14" hits="0" branch="false" />
+            <line number="15" hits="0" branch="false" />
+            <line number="16" hits="0" branch="false" />
+            <line number="17" hits="0" branch="false" />
+          </lines>
+        </class>
+        <class name="BAS.AuditJournal.Infrastructure.Utils.Helpers" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Infrastructure\Utils\Helpers.cs" line-rate="1" branch-rate="1" complexity="2">
+          <methods>
+            <method name="GetConnectionString" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="13" hits="1" branch="false" />
+                <line number="14" hits="1" branch="false" />
+                <line number="15" hits="1" branch="false" />
+                <line number="16" hits="1" branch="false" />
+                <line number="17" hits="1" branch="false" />
+                <line number="18" hits="1" branch="false" />
+                <line number="20" hits="1" branch="false" />
+                <line number="21" hits="1" branch="false" />
+                <line number="24" hits="1" branch="false" />
+                <line number="25" hits="1" branch="false" />
+                <line number="26" hits="1" branch="false" />
+                <line number="28" hits="1" branch="false" />
+                <line number="30" hits="1" branch="false" />
+                <line number="31" hits="1" branch="false" />
+                <line number="32" hits="1" branch="false" />
+                <line number="34" hits="1" branch="false" />
+                <line number="35" hits="1" branch="false" />
+                <line number="36" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="9" hits="1" branch="false" />
+                <line number="10" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="9" hits="1" branch="false" />
+            <line number="10" hits="1" branch="false" />
+            <line number="13" hits="1" branch="false" />
+            <line number="14" hits="1" branch="false" />
+            <line number="15" hits="1" branch="false" />
+            <line number="16" hits="1" branch="false" />
+            <line number="17" hits="1" branch="false" />
+            <line number="18" hits="1" branch="false" />
+            <line number="20" hits="1" branch="false" />
+            <line number="21" hits="1" branch="false" />
+            <line number="24" hits="1" branch="false" />
+            <line number="25" hits="1" branch="false" />
+            <line number="26" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="30" hits="1" branch="false" />
+            <line number="31" hits="1" branch="false" />
+            <line number="32" hits="1" branch="false" />
+            <line number="34" hits="1" branch="false" />
+            <line number="35" hits="1" branch="false" />
+            <line number="36" hits="1" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+    <package name="AuditJournal.Logging" line-rate="0.101694915254237" branch-rate="0" complexity="23">
+      <classes>
+        <class name="BAS.AuditJournal.Logging.Logger" filename="C:\Users\carlos.aguero\source\repos\codeclimate-csharp\Backend\AuditJournal.Logging\Logger.cs" line-rate="0.101694915254237" branch-rate="0" complexity="23">
+          <methods>
+            <method name="get_Instance" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="28" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Debug" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="40" hits="0" branch="false" />
+                <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="42" hits="0" branch="false" />
+                <line number="43" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Info" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="50" hits="0" branch="false" />
+                <line number="51" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="52" hits="0" branch="false" />
+                <line number="53" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Warn" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="60" hits="0" branch="false" />
+                <line number="61" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="62" hits="0" branch="false" />
+                <line number="63" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Error" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="70" hits="0" branch="false" />
+                <line number="71" hits="0" branch="false" />
+                <line number="72" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Fatal" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="79" hits="0" branch="false" />
+                <line number="80" hits="0" branch="false" />
+                <line number="81" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Debug" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="89" hits="0" branch="false" />
+                <line number="90" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="91" hits="0" branch="false" />
+                <line number="92" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Info" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="100" hits="0" branch="false" />
+                <line number="101" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="102" hits="0" branch="false" />
+                <line number="103" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Warn" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="111" hits="0" branch="false" />
+                <line number="112" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="113" hits="0" branch="false" />
+                <line number="114" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Error" signature="(...)" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="122" hits="1" branch="false" />
+                <line number="123" hits="1" branch="false" />
+                <line number="124" hits="1" branch="false" />
+              </lines>
+            </method>
+            <method name="Fatal" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="132" hits="0" branch="false" />
+                <line number="133" hits="0" branch="false" />
+                <line number="134" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Error" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="141" hits="0" branch="false" />
+                <line number="142" hits="0" branch="false" />
+                <line number="143" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="Fatal" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="150" hits="0" branch="false" />
+                <line number="151" hits="0" branch="false" />
+                <line number="152" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="SerializeException" signature="(...)" line-rate="0" branch-rate="1" complexity="1">
+              <lines>
+                <line number="164" hits="0" branch="false" />
+                <line number="165" hits="0" branch="false" />
+                <line number="166" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name="SerializeException" signature="(...)" line-rate="0" branch-rate="0" complexity="2">
+              <lines>
+                <line number="179" hits="0" branch="false" />
+                <line number="180" hits="0" branch="false" />
+                <line number="181" hits="0" branch="false" />
+                <line number="183" hits="0" branch="true" condition-coverage="0% (0/2)" />
+                <line number="184" hits="0" branch="false" />
+                <line number="185" hits="0" branch="false" />
+                <line number="186" hits="0" branch="false" />
+                <line number="187" hits="0" branch="false" />
+                <line number="188" hits="0" branch="false" />
+                <line number="190" hits="0" branch="false" />
+                <line number="191" hits="0" branch="false" />
+              </lines>
+            </method>
+            <method name=".cctor" signature="()" line-rate="1" branch-rate="1" complexity="1">
+              <lines>
+                <line number="11" hits="1" branch="false" />
+                <line number="12" hits="1" branch="false" />
+              </lines>
+            </method>
+          </methods>
+          <lines>
+            <line number="11" hits="1" branch="false" />
+            <line number="12" hits="1" branch="false" />
+            <line number="28" hits="1" branch="false" />
+            <line number="40" hits="0" branch="false" />
+            <line number="41" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="42" hits="0" branch="false" />
+            <line number="43" hits="0" branch="false" />
+            <line number="50" hits="0" branch="false" />
+            <line number="51" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="52" hits="0" branch="false" />
+            <line number="53" hits="0" branch="false" />
+            <line number="60" hits="0" branch="false" />
+            <line number="61" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="62" hits="0" branch="false" />
+            <line number="63" hits="0" branch="false" />
+            <line number="70" hits="0" branch="false" />
+            <line number="71" hits="0" branch="false" />
+            <line number="72" hits="0" branch="false" />
+            <line number="79" hits="0" branch="false" />
+            <line number="80" hits="0" branch="false" />
+            <line number="81" hits="0" branch="false" />
+            <line number="89" hits="0" branch="false" />
+            <line number="90" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="91" hits="0" branch="false" />
+            <line number="92" hits="0" branch="false" />
+            <line number="100" hits="0" branch="false" />
+            <line number="101" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="102" hits="0" branch="false" />
+            <line number="103" hits="0" branch="false" />
+            <line number="111" hits="0" branch="false" />
+            <line number="112" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="113" hits="0" branch="false" />
+            <line number="114" hits="0" branch="false" />
+            <line number="122" hits="1" branch="false" />
+            <line number="123" hits="1" branch="false" />
+            <line number="124" hits="1" branch="false" />
+            <line number="132" hits="0" branch="false" />
+            <line number="133" hits="0" branch="false" />
+            <line number="134" hits="0" branch="false" />
+            <line number="141" hits="0" branch="false" />
+            <line number="142" hits="0" branch="false" />
+            <line number="143" hits="0" branch="false" />
+            <line number="150" hits="0" branch="false" />
+            <line number="151" hits="0" branch="false" />
+            <line number="152" hits="0" branch="false" />
+            <line number="164" hits="0" branch="false" />
+            <line number="165" hits="0" branch="false" />
+            <line number="166" hits="0" branch="false" />
+            <line number="179" hits="0" branch="false" />
+            <line number="180" hits="0" branch="false" />
+            <line number="181" hits="0" branch="false" />
+            <line number="183" hits="0" branch="true" condition-coverage="0% (0/2)" />
+            <line number="184" hits="0" branch="false" />
+            <line number="185" hits="0" branch="false" />
+            <line number="186" hits="0" branch="false" />
+            <line number="187" hits="0" branch="false" />
+            <line number="188" hits="0" branch="false" />
+            <line number="190" hits="0" branch="false" />
+            <line number="191" hits="0" branch="false" />
+          </lines>
+        </class>
+      </classes>
+    </package>
+  </packages>
+</coverage>
