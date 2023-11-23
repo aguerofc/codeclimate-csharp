@@ -36,7 +36,9 @@ blocks:
             - 'echo "PATH: $PATH"'
             - cat ~/.bashrc
             - ls -al /usr/bin/dotnet
-            - /usr/share/dotnet/dotnet restore /Backend/AuditJournalAPI.sln
+            - pwd
+            - ls
+            - '#/usr/share/dotnet/dotnet restore /Backend/AuditJournalAPI.sln'
   - name: Build and Test
     task:
       jobs:
