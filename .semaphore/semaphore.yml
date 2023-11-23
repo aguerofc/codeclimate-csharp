@@ -43,7 +43,7 @@ blocks:
             - ./cc-test-reporter before-build
             - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=lcov /p:CoverletOutput=./coverage/lcov.info'
             - ls -R
-            - './cc-test-reporter format-coverage -t, --coverage-input-type lcov -o codeclimate.lcov'
+            - ./cc-test-reporter format-coverage -t lcov -o codeclimate.lcov -p coverage
             - ./cc-test-reporter upload-coverage -i codeclimate.lcov
             - '#./cc-test-reporter after-build --coverage-input-type lcov --exit-code $?'
       env_vars:
