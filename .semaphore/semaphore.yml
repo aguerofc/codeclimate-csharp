@@ -38,7 +38,7 @@ blocks:
             - ls -al /usr/bin/dotnet
             - pwd
             - ls
-            - ls -al ~/codeclimate-csharp/Backend
+            - ls -al ~/codeclimate-csharp
             - pwd
             - ls
             - '#/usr/share/dotnet/dotnet restore /Backend/AuditJournalAPI.sln'
