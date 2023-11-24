@@ -39,7 +39,7 @@ blocks:
             - cd Backend
             - /usr/share/dotnet/dotnet restore
             - /usr/share/dotnet/dotnet build --configuration Release
-            - /usr/share/dotnet/dotnet test
+            - /usr/share/dotnet/dotnet test /home/semaphore/dotCover/dotCover.sh --dcReportType=XML
             - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
             - chmod +x ./cc-test-reporter
             - '#./cc-test-reporter before-build'
