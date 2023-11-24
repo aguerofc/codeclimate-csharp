@@ -43,7 +43,7 @@ blocks:
             - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
             - chmod +x ./cc-test-reporter
             - '#./cc-test-reporter before-build'
-            - mkdir -p ./coverage
+            - '#mkdir -p ./coverage'
             - '/usr/share/dotnet/dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
             - ls -R
             - ls -l /home/semaphore/codeclimate-csharp/Backend/AuditJournal.API/AuditJournal.API.csproj
