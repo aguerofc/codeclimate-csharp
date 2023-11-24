@@ -44,7 +44,7 @@ blocks:
             - chmod +x ./cc-test-reporter
             - '#./cc-test-reporter before-build'
             - mkdir -p ./coverage
-            - '#dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
+            - '/usr/share/dotnet/dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'''
             - ls -R
             - ls -l /home/semaphore/codeclimate-csharp/Backend/AuditJournal.API/AuditJournal.API.csproj
             - chmod +rx /home/semaphore/codeclimate-csharp/Backend/AuditJournal.API/AuditJournal.API.csproj
