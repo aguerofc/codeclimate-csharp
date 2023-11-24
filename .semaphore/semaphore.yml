@@ -18,7 +18,7 @@ blocks:
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-6.0
-            - 'wget https://download.jetbrains.com/resharper/JetBrains.dotCover.CommandLineTools.2021.1.2.zip -O dotCover.zip'
+            - 'sudo wget https://download.jetbrains.com/resharper/JetBrains.dotCover.CommandLineTools.2021.1.2.zip -O dotCover.zip'
             - unzip -q dotCover.zip -d dotCover
             - source $HOME/.bashrc
             - which dotnet
