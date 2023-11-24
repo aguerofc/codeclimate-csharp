@@ -53,7 +53,7 @@ blocks:
             - ls
             - cat dotcover.xml
             - file -i /home/semaphore/codeclimate-csharp/Backend/dotcover.xml
-            - ./cc-test-reporter format-coverage -t dotcover -o codeclimate.xml -p /home/semaphore/codeclimate-csharp/Backend/dotcover.xml
+            - ./cc-test-reporter format-coverage -t dotcover -o codeclimate.json -p /home/semaphore/codeclimate-csharp/Backend/dotcover.xml
             - '#./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p /home/semaphore/codeclimate-csharp/Backend/AuditJournal.Test/coverage/dotcover.xml'
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
             - ./cc-test-reporter upload-coverage -i /codeclimate.xml
