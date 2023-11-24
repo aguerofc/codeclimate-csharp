@@ -48,7 +48,7 @@ blocks:
             - ls -R
             - ls -l /home/semaphore/codeclimate-csharp/Backend/AuditJournal.API/AuditJournal.API.csproj
             - chmod +rx /home/semaphore/codeclimate-csharp/Backend/AuditJournal.API/AuditJournal.API.csproj
-            - sudo /home/semaphore/dotCover/dotCover.sh cover --output=coverage.xml --reportType=XML --/TargetExecutable=/usr/share/dotnet/ --TargetArguments=/AuditJournal.Test/bin/debug/AuditJournal.Test.dll
+            - sudo /home/semaphore/dotCover/dotCover.sh cover --output=coverage.xml --reportType=XML --TargetExecutable=/usr/share/dotnet/ --TargetArguments=/AuditJournal.Test/bin/debug/AuditJournal.Test.dll
             - '#/cc-test-reporter format-coverage -t dotcover -o codeclimate.json -p ./'
             - '#./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p ./AuditJournal.Test/coverage/cobertura.xml'
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
