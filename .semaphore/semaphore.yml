@@ -19,6 +19,8 @@ blocks:
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-6.0
             - 'sudo wget https://download.jetbrains.com/resharper/dotUltimate.2023.2.3/JetBrains.dotCover.CommandLineTools.linux-x64.2023.2.3.tar.gz -O dotCover.tar.gz'
+            - pwd
+            - ls
             - tar -xzf dotCover.tar.gz -C dotCover
             - chmod +x dotCover/dotCover.sh
             - source $HOME/.bashrc
