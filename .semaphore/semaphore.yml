@@ -51,7 +51,7 @@ blocks:
             - /home/semaphore/dotCover/dotCover.sh cover --output=coverage.xml --TargetExecutable="/usr/share/dotnet/dotnet" --TargetArguments="test /home/semaphore/codeclimate-csharp/Backend/AuditJournal.Test/AuditJournal.Test.csproj"
             - pwd
             - ls
-            - /cc-test-reporter format-coverage -t dotcover -o codeclimate.json -p coverage.xml
+            - /cc-test-reporter format-coverage -t dotcover -o codeclimate.json -p /coverage.xml
             - '#./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p /home/semaphore/codeclimate-csharp/Backend/AuditJournal.Test/coverage/cobertura.xml'
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
             - ./cc-test-reporter upload-coverage -i /codeclimate.xml
