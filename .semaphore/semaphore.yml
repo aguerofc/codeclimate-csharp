@@ -10,7 +10,6 @@ blocks:
       jobs:
         - name: Setup
           commands:
-            - '##'
             - export DOTNET_ROOT=usr/share/dotnet
             - 'export PATH=$PATH:$DOTNET_ROOT'
             - 'sudo wget https://packages.microsoft.com/config/ubuntu/20.04/packages-microsoft-prod.deb -O packages-microsoft-prod.deb'
@@ -19,6 +18,8 @@ blocks:
             - sudo apt-get install -y apt-transport-https
             - sudo apt-get update
             - sudo apt-get install -y dotnet-sdk-6.0
+            - 'wget https://download.jetbrains.com/resharper/JetBrains.dotCover.CommandLineTools.2021.1.2.zip -O dotCover.zip'
+            - unzip -q dotCover.zip -d dotCover
             - source $HOME/.bashrc
             - which dotnet
             - dotnet --info
@@ -39,15 +40,14 @@ blocks:
             - chmod +x ./cc-test-reporter
             - '#./cc-test-reporter before-build'
             - mkdir -p ./coverage
-            - 'dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
+            - '#dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
             - ls -R
             - ls ./AuditJournal.Test/
-            - 'cat ./AuditJournal.Test/coverage/cobertura.xml '
-            - mv ./AuditJournal.Test/coverage/cobertura.xml ./coverage
-            - ls ./coverage
-            - ./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p ./coverage/cobertura.xml
+            - dotCover/dotCover.sh cover --configuration=Debug --output=coverage.xml AuditJournalAPI.sln
+            - /cc-test-reporter format-coverage -t dotcover -o codeclimate.json -p ./
+            - '#./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p ./AuditJournal.Test/coverage/cobertura.xml'
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
-            - ./cc-test-reporter upload-coverage -i codeclimate.xml
+            - ./cc-test-reporter upload-coverage -i codeclimate.json
             - '#./cc-test-reporter after-build --exit-code $?'
       env_vars:
         - name: CC_TEST_REPORTER_ID
