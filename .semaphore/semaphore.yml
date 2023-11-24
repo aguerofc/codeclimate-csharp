@@ -26,7 +26,6 @@ blocks:
             - chmod +x dotCover/dotCover.sh
             - source $HOME/.bashrc
             - which dotnet
-            - ls usr/share/dotnet
             - dotnet --info
             - dotnet --version
             - 'echo "PATH: $PATH"'
