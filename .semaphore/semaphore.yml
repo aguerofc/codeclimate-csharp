@@ -47,7 +47,7 @@ blocks:
             - '#dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
             - ls -R
             - ls ./AuditJournal.Test/
-            - /home/semaphore/dotCover/dotCover.sh cover --configuration=Release --output=coverage.xml ./AuditJournal.API/AuditJournal.API.csproj
+            - /home/semaphore/dotCover/dotCover.sh cover --configuration=Release --output=coverage.xml --TargetExecutable=./AuditJournal.API/AuditJournal.API.csproj
             - /cc-test-reporter format-coverage -t dotcover -o codeclimate.json -p ./
             - '#./cc-test-reporter format-coverage -t cobertura -o codeclimate.xml -p ./AuditJournal.Test/coverage/cobertura.xml'
             - '#./cc-test-reporter format-coverage -t lcov -o codeclimate.json '
