@@ -37,6 +37,7 @@ blocks:
             - pwd
             - ls
             - cd Backend
+            - ./cc-test-reporter before-build
             - /usr/share/dotnet/dotnet restore
             - /usr/share/dotnet/dotnet build
             - /usr/share/dotnet/dotnet test
@@ -44,7 +45,6 @@ blocks:
             - chmod +x ./cc-test-reporter
             - COMMIT_SHA=$(git rev-parse HEAD)
             - 'echo "Current commit SHA: $COMMIT_SHA"'
-            - ./cc-test-reporter before-build
             - '#mkdir -p ./coverage'
             - '/usr/share/dotnet/dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
             - ls -R
