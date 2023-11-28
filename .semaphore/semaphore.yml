@@ -42,7 +42,9 @@ blocks:
             - /usr/share/dotnet/dotnet test
             - 'curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter'
             - chmod +x ./cc-test-reporter
-            - '#./cc-test-reporter before-build'
+            - COMMIT_SHA=$(git rev-parse HEAD)
+            - 'echo "Current commit SHA: $COMMIT_SHA"'
+            - ./cc-test-reporter before-build
             - '#mkdir -p ./coverage'
             - '/usr/share/dotnet/dotnet test /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura /p:CoverletOutput=./coverage'
             - ls -R
